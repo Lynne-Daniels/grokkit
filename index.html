@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Grokkit - Javascript Notes and Examples</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--http://getbootstrap.com/components/#navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Grokkit</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN - JavaScript</a></li>
+                    <li><a href="http://regexr.com/">RegExr</a></li>
+                    <li><a href="https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf">Git Cheat Sheet</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-2 linky side">
+                <div><a href="#make-new-project">Setup Project</a></div>
+                <div>Git</div>
+                <div>another thing</div>
+                <div>thing</div>
+                <div>thing</div>
+                <div>thing</div>
+            </div>
+            <div class="col-xs-10">
+        <div class="well well-lg">
+            <a name="make-new-project"></a>
+        <article>
+                 
+          <h3>Making a new project.</h3>
+          <ul>
+            <li>Make new project at Github.  Add readme, gitignore node.</li>
+            <li>In bash, navigate to the folder containing all the projects</li>
+            <li>Get the clone link from github. For example: https://github.com/Lynne-Daniels/grokkit.git</li>
+            <li>In bash <code>$git clone https://github.com/Lynne-Daniels/grokkit.git</code></li>
+            <li>If it worked...now have a new folder with project name.</li>
+            <li>Add file called package.json.  
+              <a href="#demo" data-toggle="collapse">Example</a>
+              <div id="demo" class="collapse">
+                <pre>
+                {
+                  "name": "grokkit",
+                  "version": "1.0.0",
+                  "description": "Web Development Notes and Examples",
+                  "main": "whatdoesthisdo.js",
+                  "scripts": {
+                    "test": "echo \"Error: no test specified\" && exit 1",
+                    "dev": "lite-server"
+                  },
+                  "author": "",
+                  "license": "ISC",
+                  "devDependencies": {
+                    "lite-server": "^2.2.0"
+                  },
+                  "dependencies": {
+                    "light-server": "^2.0.2"
+                  }
+                }
+                </pre>
+              </div>
+            </li>
+            <li>Add index.html, app.js, main.css files to project folder, make more directories if needed</li>
+            <li>in bash cd to new project</li>
+            <li><code>$ npm install</code>, then <code>npm run dev</code></li>
+            <li>if it worked - a browser windo pops up and will automagically refresh when the html, css or js files are updated.</li>
+            <li>In the HTML file, plan and make the grid first!!!</li>
+          </ul>
+            <aside>Will need to restart the web server when returning to this project. <code>my-project $ npm run dev</code>
+            </aside>
+            
+        </article>
+        </div>
+        <article>
+          <h3>Git</h3>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+        </article>
+            </div>
+        <article>
+          <h3>Setting Up the New Macbook Pro</h3>
+          node installed at /usr/local/bin/nodenpm was installed at /usr/local/bin/npm message says make sure that /usr/local/bin is in your $PATH
+        </article>
+
+          </div>
+      </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../js/app.js"></script>
+  
+  </body>
+</html>
