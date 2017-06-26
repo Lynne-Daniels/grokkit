@@ -7,12 +7,28 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "lite-server"
   },
-  "author": "",
+  "author": "Lynne Daniels",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^4.1.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1",
     "lite-server": "^2.2.0"
   },
   "dependencies": {
     "light-server": "^2.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lynne-Daniels/grokkit.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Lynne-Daniels/grokkit/issues"
+  },
+  "homepage": "https://github.com/Lynne-Daniels/grokkit#readme"
 }

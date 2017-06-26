@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Grokkit - Javascript Notes and Examples</title>
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -16,151 +16,1154 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
+</head>
+
+<body>
     <!--http://getbootstrap.com/components/#navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Grokkit</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>@
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Grokkit</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="    ">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN - JavaScript</a></li>
+                            <li><a href="http://regexr.com/">RegExr</a></li>
+                            <li><a href="https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf">Git Cheat Sheet</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="http://docs.emmet.io/cheat-sheet/">Emmet Cheatsheet</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN - JavaScript</a></li>
-                    <li><a href="http://regexr.com/">RegExr</a></li>
-                    <li><a href="https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf">Git Cheat Sheet</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-      <div class="container-fluid">
-          <div class="row">
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
             <div class="col-xs-2 linky side">
                 <div><a href="#make-new-project">Setup Project</a></div>
-                <div>Git</div>
-                <div>another thing</div>
-                <div>thing</div>
+                <div><a href="#git">Git</a></div>
+                <div><a href="#setup-new-macbood-pro">Setup New Macbook Pro </a></div>
+                <div><a href="#command-line">Command Line</a></div>
                 <div>thing</div>
                 <div>thing</div>
             </div>
             <div class="col-xs-10">
-        <div class="well well-lg">
-            <a name="make-new-project"></a>
-        <article>
-                 
-          <h3>Making a new project.</h3>
-          <ul>
-            <li>Make new project at Github.  Add readme, gitignore node.</li>
-            <li>In bash, navigate to the folder containing all the projects</li>
-            <li>Get the clone link from github. For example: https://github.com/Lynne-Daniels/grokkit.git</li>
-            <li>In bash <code>$git clone https://github.com/Lynne-Daniels/grokkit.git</code></li>
-            <li>If it worked...now have a new folder with project name.</li>
-            <li>Add file called package.json.  
-              <a href="#demo" data-toggle="collapse">Example</a>
-              <div id="demo" class="collapse">
-                <pre>
-                {
-                  "name": "grokkit",
-                  "version": "1.0.0",
-                  "description": "Web Development Notes and Examples",
-                  "main": "whatdoesthisdo.js",
-                  "scripts": {
-                    "test": "echo \"Error: no test specified\" && exit 1",
-                    "dev": "lite-server"
-                  },
-                  "author": "",
-                  "license": "ISC",
-                  "devDependencies": {
-                    "lite-server": "^2.2.0"
-                  },
-                  "dependencies": {
-                    "light-server": "^2.0.2"
+                <div class="well well-lg">
+                    <a name="make-new-project"></a>
+                    <article>
+                        <h3>Making a new project.</h3>
+                        <ul>
+                            <li>Make new project at Github. Add readme, gitignore node.</li>
+                            <li>May want to gitignore .sublime-workspace</li>li>
+                            <li>In bash, navigate to the folder containing all the projects</li>
+                            <li>Get the clone link from github. For example: https://github.com/Lynne-Daniels/grokkit.git</li>
+                            <li>In bash <code>$git clone https://github.com/Lynne-Daniels/grokkit.git</code></li>
+                            <li>If it worked...now have a new folder with project name.</li>
+                            <li>Add file called package.json.
+                                <a href="#demo" data-toggle="collapse">Example</a>
+                                <div id="demo" class="collapse">
+                                    <pre>
+                                    {
+                                      "name": "grokkit",
+                                      "version": "1.0.0",
+                                      "description": "Web Development Notes and Examples",
+                                      "main": "whatdoesthisdo.js",
+                                      "scripts": {
+                                        "test": "echo \"Error: no test specified\" && exit 1",
+                                        "dev": "lite-server"
+                                      },
+                                      "author": "",
+                                      "license": "ISC",
+                                      "devDependencies": {
+                                        "lite-server": "^2.2.0"
+                                      },
+                                      "dependencies": {
+                                        "light-server": "^2.0.2"
+                                      }
+                                    }
+                                    </pre>
+                                </div>
+                            </li>
+                            <li>Add index.html, app.js, main.css files to project folder, make more directories if needed</li>
+                            <li>Add .sublime-project if needed to hold settings for editor</li>li>
+                            <li>in bash cd to new project</li>
+                            <li><code>$ npm install</code>, then <code>npm run dev</code></li>
+                            <li>if it worked - a browser windo pops up and will automagically refresh when the html, css or js files are updated.</li>
+                            <li>In the HTML file, plan and make the grid first!!!</li>
+                            <li>install eslint locally in your project folder (you must have package.json file there): <code>npm install eslint</code>, then <code>./node_modules/.bin/eslint --init</code></li>
+                        </ul>
+                        <aside>Will need to restart the web server when returning to this project. <code>my-project $ npm run dev</code>
+                        </aside>
+                    </article>
+                </div>
+                <div class="well well-lg">
+                <a name="git"></a>
+                <article>
+                    <h3>Git</h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </article>
+                </div>
+                <div class="well well-lg">
+                <a name="setup-new-macbood-pro"></a>
+                <article>
+                    <h3>Setting Up the New Macbook Pro</h3>
+                    <ul>
+                        <li>node installed at /usr/local/bin/nodenpm was installed at /usr/local/bin/npm message says make sure that /usr/</li>
+                        <li>local/bin is in your $PATH</li>
+                        <li>install Sublime Text</li>
+                        <li>https://packagecontrol.io/installation </li>
+                        <li>tried to run git in the terminal, dialog pop up wants to install it and maybe other developer stuff. </li>
+                        <li>ok -- took 5 min. Did not install xCode, another choice in the dialog box.</li>
+                        <li>cmd shift P is package control</li>
+                        <li>install emmet, sublime linter with contrib-eslint, babel, htmlhint, and csslint(broken :-(). Linter add-ons were all installed locally in the grokkit project.</li>
+                        <a href="#demo" data-toggle="collapse">Didn't go smoothly - see console history.</a>
+                        <div id="demo" class="collapse">
+                            <pre>
+                  Last login: Sun Jun 25 09:29:55 on ttys002
+                  Lynnes-MacBook-Pro:~ lynnedaniels$ cd "/Users/lynnedaniels/Documents/code/grokkit" && clear
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm init -f npm install eslint
+                  npm WARN using --force I sure hope you know what you are doing.
+                  Wrote to /Users/lynnedaniels/Documents/code/grokkit/package.json:
+
+                  {
+                    "name": "grokkit",
+                    "version": "1.0.0",
+                    "description": "Web Development Notes and Examples",
+                    "main": "whatdoesthisdo.js",
+                    "scripts": {
+                      "test": "echo \"Error: no test specified\" && exit 1",
+                      "dev": "lite-server"
+                    },
+                    "author": "",
+                    "license": "ISC",
+                    "devDependencies": {
+                      "lite-server": "^2.2.0"
+                    },
+                    "dependencies": {
+                      "light-server": "^2.0.2"
+                    },
+                    "repository": {
+                      "type": "git",
+                      "url": "git+https://github.com/Lynne-Daniels/grokkit.git"
+                    },
+                    "keywords": [],
+                    "bugs": {
+                      "url": "https://github.com/Lynne-Daniels/grokkit/issues"
+                    },
+                    "homepage": "https://github.com/Lynne-Daniels/grokkit#readme"
                   }
-                }
-                </pre>
-              </div>
-            </li>
-            <li>Add index.html, app.js, main.css files to project folder, make more directories if needed</li>
-            <li>in bash cd to new project</li>
-            <li><code>$ npm install</code>, then <code>npm run dev</code></li>
-            <li>if it worked - a browser windo pops up and will automagically refresh when the html, css or js files are updated.</li>
-            <li>In the HTML file, plan and make the grid first!!!</li>
-          </ul>
-            <aside>Will need to restart the web server when returning to this project. <code>my-project $ npm run dev</code>
-            </aside>
-            
-        </article>
-        </div>
-        <article>
-          <h3>Git</h3>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-        </article>
+
+
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ ./node_modules/.bin/eslint --init
+                  -bash: ./node_modules/.bin/eslint: No such file or directory
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm install eslint
+                  grokkit@1.0.0 /Users/lynnedaniels/Documents/code/grokkit
+                  └─┬ eslint@4.1.0
+                    ├─┬ babel-code-frame@6.22.0
+                    │ └── js-tokens@3.0.1
+                    ├─┬ concat-stream@1.6.0
+                    │ └── typedarray@0.0.6
+                    ├─┬ debug@2.6.8
+                    │ └── ms@2.0.0
+                    ├── doctrine@2.0.0
+                    ├─┬ eslint-scope@3.7.1
+                    │ └── esrecurse@4.2.0
+                    ├─┬ espree@3.4.3
+                    │ ├── acorn@5.0.3
+                    │ └─┬ acorn-jsx@3.0.1
+                    │   └── acorn@3.3.0
+                    ├── esquery@1.0.0
+                    ├── estraverse@4.2.0
+                    ├── esutils@2.0.2
+                    ├─┬ file-entry-cache@2.0.0
+                    │ └─┬ flat-cache@1.2.2
+                    │   ├── circular-json@0.3.1
+                    │   ├─┬ del@2.2.2
+                    │   │ ├─┬ globby@5.0.0
+                    │   │ │ └─┬ array-union@1.0.2
+                    │   │ │   └── array-uniq@1.0.3
+                    │   │ ├── is-path-cwd@1.0.0
+                    │   │ ├─┬ is-path-in-cwd@1.0.0
+                    │   │ │ └── is-path-inside@1.0.0
+                    │   │ └── rimraf@2.6.1
+                    │   └─┬ write@0.2.1
+                    │     └─┬ mkdirp@0.5.1
+                    │       └── minimist@0.0.8
+                    ├── globals@9.18.0
+                    ├── ignore@3.3.3
+                    ├── imurmurhash@0.1.4
+                    ├─┬ inquirer@3.1.1
+                    │ ├── ansi-escapes@2.0.0
+                    │ ├─┬ cli-cursor@2.1.0
+                    │ │ └─┬ restore-cursor@2.0.0
+                    │ │   ├─┬ onetime@2.0.1
+                    │ │   │ └── mimic-fn@1.1.0
+                    │ │   └── signal-exit@3.0.2
+                    │ ├── cli-width@2.1.0
+                    │ ├─┬ external-editor@2.0.4
+                    │ │ ├── iconv-lite@0.4.18
+                    │ │ ├── jschardet@1.4.2
+                    │ │ └─┬ tmp@0.0.31
+                    │ │   └── os-tmpdir@1.0.2
+                    │ ├── figures@2.0.0
+                    │ ├── mute-stream@0.0.7
+                    │ ├─┬ run-async@2.3.0
+                    │ │ └── is-promise@2.1.0
+                    │ ├── rx-lite@4.0.8
+                    │ ├── rx-lite-aggregates@4.0.8
+                    │ ├─┬ string-width@2.0.0
+                    │ │ └── is-fullwidth-code-point@2.0.0
+                    │ └── through@2.3.8
+                    ├─┬ is-resolvable@1.0.0
+                    │ └── tryit@1.0.3
+                    ├─┬ js-yaml@3.8.4
+                    │ ├─┬ argparse@1.0.9
+                    │ │ └── sprintf-js@1.0.3
+                    │ └── esprima@3.1.3
+                    ├─┬ json-stable-stringify@1.0.1
+                    │ └── jsonify@0.0.0
+                    ├─┬ levn@0.3.0
+                    │ ├── prelude-ls@1.1.2
+                    │ └── type-check@0.3.2
+                    ├─┬ mkdirp@0.5.1
+                    │ └── minimist@0.0.8
+                    ├── natural-compare@1.4.0
+                    ├─┬ optionator@0.8.2
+                    │ ├── deep-is@0.1.3
+                    │ ├── fast-levenshtein@2.0.6
+                    │ └── wordwrap@1.0.0
+                    ├── path-is-inside@1.0.2
+                    ├── pluralize@4.0.0
+                    ├── progress@2.0.0
+                    ├─┬ require-uncached@1.0.3
+                    │ ├─┬ caller-path@0.1.0
+                    │ │ └── callsites@0.2.0
+                    │ └── resolve-from@1.0.1
+                    ├─┬ table@4.0.1
+                    │ ├─┬ ajv@4.11.8
+                    │ │ └── co@4.6.0
+                    │ ├── ajv-keywords@1.5.1
+                    │ ├── slice-ansi@0.0.4
+                    │ └─┬ string-width@2.0.0
+                    │   └── is-fullwidth-code-point@2.0.0
+                    └── text-table@0.2.0
+
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ ./node_modules/.bin/eslint --init
+                  ? How would you like to configure ESLint? Use a popular style guide
+                  ? Which style guide do you want to follow? Standard
+                  ? What format do you want your config file to be in? JSON
+                  Checking peerDependencies of eslint-config-standard
+                  Local ESLint installation not found.
+                  Installing eslint-config-standard@latest, eslint@>=3.19.0, eslint-plugin-import@>=2.2.0, eslint-plugin-node@>=4.2.2, eslint-plugin-promise@>=3.5.0, eslint-plugin-standard@>=3.0.0
+                  Successfully created .eslintrc.json file in /Users/lynnedaniels/Documents/code/grokkit
+                  ESLint was installed locally. We recommend using this local copy instead of your globally-installed copy.
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ ./node_modules/.bin/eslint-config-hackreactor
+                  -bash: ./node_modules/.bin/eslint-config-hackreactor: No such file or directory
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm install hackreactor-labs/eslint-config-hackreactor
+                  grokkit@1.0.0 /Users/lynnedaniels/Documents/code/grokkit
+                  └── eslint-config-hackreactor@1.0.0  (git://github.com/hackreactor-labs/eslint-config-hackreactor.git#cd431a544e8fb42c9f38b511ded0001d7108c304)
+
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ ./node_modules/.bin/eslint --init
+                  ? How would you like to configure ESLint? Inspect your JavaScript file(s)
+                  ? Which file(s), path(s), or glob(s) should be examined? asdf
+                  ? What format do you want your config file to be in? JavaScript
+                  ? Are you using ECMAScript 6 features? Yes
+                  ? Are you using ES6 modules? Yes
+                  ? Where will your code run? Browser
+                  ? Do you use CommonJS? No
+                  ? Do you use JSX? Yes
+                  ? Do you use React? Yes
+                  Installing eslint-plugin-react@latest, eslint@latest
+                  grokkit@1.0.0 /Users/lynnedaniels/Documents/code/grokkit
+                  ├── eslint@4.1.0
+                  └─┬ eslint-plugin-react@7.1.0
+                    └── jsx-ast-utils@1.4.1
+
+
+
+                  Automatic Configuration failed.  No files were able to be parsed.
+                  Error: Automatic Configuration failed.  No files were able to be parsed.
+                      at configureRules (/Users/lynnedaniels/Documents/code/grokkit/node_modules/eslint/lib/config/config-initializer.js:149:15)
+                      at processAnswers (/Users/lynnedaniels/Documents/code/grokkit/node_modules/eslint/lib/config/config-initializer.js:257:18)
+                      at inquirer.prompt.then.secondAnswers (/Users/lynnedaniels/Documents/code/grokkit/node_modules/eslint/lib/config/config-initializer.js:422:26)
+                  Determining Config: 0% [------------------------------] 0.0s elapsed, eta 0.0s Lynnes-MacBook-Pro:grokkit lynnedaniels$ ./node_modules/.bin/eslint --init
+                  ? How would you like to configure ESLint? Answer questions about your style
+                  ? Are you using ECMAScript 6 features? Yes
+                  ? Are you using ES6 modules? Yes
+                  ? Where will your code run? Browser
+                  ? Do you use CommonJS? No
+                  ? Do you use JSX? Yes
+                  ? Do you use React? Yes
+                  ? What style of indentation do you use? Tabs
+                  ? What quotes do you use for strings? Single
+                  ? What line endings do you use? Unix
+                  ? Do you require semicolons? Yes
+                  ? What format do you want your config file to be in? JavaScript
+                  Installing eslint-plugin-react@latest, eslint@latest
+                  grokkit@1.0.0 /Users/lynnedaniels/Documents/code/grokkit
+                  ├── eslint@4.1.0
+                  └── eslint-plugin-react@7.1.0
+
+                  Installing eslint-plugin-react@latest, eslint@latest
+                  grokkit@1.0.0 /Users/lynnedaniels/Documents/code/grokkit
+                  ├── eslint@4.1.0
+                  └── eslint-plugin-react@7.1.0
+
+                  Successfully created .eslintrc.js file in /Users/lynnedaniels/Documents/code/grokkit
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ eslint js/app.js
+                  -bash: eslint: command not found
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ ./node_modules/.bin/eslint js/app.js
+
+                  /Users/lynnedaniels/Documents/code/grokkit/js/app.js
+                     7:1   error    Expected a function expression                      func-style
+                     8:1   error    Expected indentation of 1 tab but found 4 spaces    indent
+                     9:1   error    Expected indentation of 1 tab but found 4 spaces    indent
+                    10:1   error    Expected indentation of 2 tabs but found 8 spaces   indent
+                    10:9   warning  Split 'var' declarations into multiple statements   one-var
+                    11:1   error    Expected indentation of 2 tabs but found 8 spaces   indent
+                    12:1   error    Expected indentation of 3 tabs but found 12 spaces  indent
+                    13:1   error    Expected indentation of 3 tabs but found 12 spaces  indent
+                    13:13  error    Expected { after 'if' condition                     curly
+                    14:1   error    Expected indentation of 2 tabs but found 8 spaces   indent
+                    15:1   error    Expected indentation of 2 tabs but found 8 spaces   indent
+                    16:1   error    Expected indentation of 2 tabs but found 8 spaces   indent
+                    17:1   error    Expected indentation of 2 tabs but found 8 spaces   indent
+                    18:1   error    Expected indentation of 2 tabs but found 8 spaces   indent
+                    18:9   error    Expected { after 'if' condition                     curly
+                    19:1   error    Expected indentation of 1 tab but found 4 spaces    indent
+                    22:1   error    Expected a function expression                      func-style
+                    22:24  warning  Missing space before opening brace                  space-before-blocks
+                    23:1   error    Expected indentation of 1 tab but found 4 spaces    indent
+                    24:1   error    Expected indentation of 1 tab but found 4 spaces    indent
+                    24:65  error    Missing semicolon                                   semi
+                    25:1   error    Expected indentation of 1 tab but found 4 spaces    indent
+                    28:58  error    Missing semicolon                                   semi
+
+                  ✖ 23 problems (21 errors, 2 warnings)
+                    19 errors, 1 warning potentially fixable with the `--fix` option.
+
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ ./node_modules/.bin/eslint js/app.js --fix
+
+                  /Users/lynnedaniels/Documents/code/grokkit/js/app.js
+                     7:1  error    Expected a function expression                     func-style
+                    10:3  warning  Split 'var' declarations into multiple statements  one-var
+                    22:1  error    Expected a function expression                     func-style
+
+                  ✖ 3 problems (2 errors, 1 warning)
+
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ ./node_modules/.bin/eslint js/app.js --fix
+
+                  /Users/lynnedaniels/Documents/code/grokkit/js/app.js
+                     7:1  error    Expected a function expression                     func-style
+                    10:3  warning  Split 'var' declarations into multiple statements  one-var
+                    22:1  error    Expected a function expression                     func-style
+
+                  ✖ 3 problems (2 errors, 1 warning)
+
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ ./node_modules/.bin/eslint js/app.js --fix
+
+                  /Users/lynnedaniels/Documents/code/grokkit/js/app.js
+                     7:1  error    Expected a function expression                     func-style
+                    10:3  warning  Split 'var' declarations into multiple statements  one-var
+                    22:1  error    Expected a function expression                     func-style
+
+                  ✖ 3 problems (2 errors, 1 warning)
+
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ ./node_modules/.bin/eslint --fix js/app.js
+
+                  /Users/lynnedaniels/Documents/code/grokkit/js/app.js
+                     7:1  error    Expected a function expression                     func-style
+                    10:3  warning  Split 'var' declarations into multiple statements  one-var
+                    22:1  error    Expected a function expression                     func-style
+
+                  ✖ 3 problems (2 errors, 1 warning)
+
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ js/app.js
+                  -bash: js/app.js: Permission denied
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ open js/app.js
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm uninstall eslint
+                  - acorn@5.0.3 node_modules/acorn
+                  - acorn@3.3.0 node_modules/acorn-jsx/node_modules/acorn
+                  - acorn-jsx@3.0.1 node_modules/acorn-jsx
+                  - ajv-keywords@1.5.1 node_modules/ajv-keywords
+                  - ansi-escapes@2.0.0 node_modules/ansi-escapes
+                  - array-uniq@1.0.3 node_modules/array-uniq
+                  - array-union@1.0.2 node_modules/array-union
+                  - callsites@0.2.0 node_modules/callsites
+                  - caller-path@0.1.0 node_modules/caller-path
+                  - circular-json@0.3.1 node_modules/circular-json
+                  - cli-width@2.1.0 node_modules/cli-width
+                  - co@4.6.0 node_modules/co
+                  - deep-is@0.1.3 node_modules/deep-is
+                  - minimist@0.0.8 node_modules/eslint/node_modules/minimist
+                  - mkdirp@0.5.1 node_modules/eslint/node_modules/mkdirp
+                  - ms@2.0.0 node_modules/eslint/node_modules/ms
+                  - debug@2.6.8 node_modules/eslint/node_modules/debug
+                  - espree@3.4.3 node_modules/espree
+                  - esprima@3.1.3 node_modules/esprima
+                  - estraverse@4.2.0 node_modules/estraverse
+                  - esquery@1.0.0 node_modules/esquery
+                  - esrecurse@4.2.0 node_modules/esrecurse
+                  - eslint-scope@3.7.1 node_modules/eslint-scope
+                  - fast-levenshtein@2.0.6 node_modules/fast-levenshtein
+                  - figures@2.0.0 node_modules/figures
+                  - globals@9.18.0 node_modules/globals
+                  - globby@5.0.0 node_modules/globby
+                  - iconv-lite@0.4.18 node_modules/iconv-lite
+                  - imurmurhash@0.1.4 node_modules/imurmurhash
+                  - is-fullwidth-code-point@2.0.0 node_modules/inquirer/node_modules/is-fullwidth-code-point
+                  - string-width@2.0.0 node_modules/inquirer/node_modules/string-width
+                  - is-path-cwd@1.0.0 node_modules/is-path-cwd
+                  - is-promise@2.1.0 node_modules/is-promise
+                  - js-tokens@3.0.1 node_modules/js-tokens
+                  - babel-code-frame@6.22.0 node_modules/babel-code-frame
+                  - jschardet@1.4.2 node_modules/jschardet
+                  - jsonify@0.0.0 node_modules/jsonify
+                  - json-stable-stringify@1.0.1 node_modules/json-stable-stringify
+                  - ajv@4.11.8 node_modules/ajv
+                  - mimic-fn@1.1.0 node_modules/mimic-fn
+                  - mute-stream@0.0.7 node_modules/mute-stream
+                  - natural-compare@1.4.0 node_modules/natural-compare
+                  - onetime@2.0.1 node_modules/onetime
+                  - os-tmpdir@1.0.2 node_modules/os-tmpdir
+                  - path-is-inside@1.0.2 node_modules/path-is-inside
+                  - is-path-inside@1.0.0 node_modules/is-path-inside
+                  - is-path-in-cwd@1.0.0 node_modules/is-path-in-cwd
+                  - pluralize@4.0.0 node_modules/pluralize
+                  - prelude-ls@1.1.2 node_modules/prelude-ls
+                  - progress@2.0.0 node_modules/progress
+                  - resolve-from@1.0.1 node_modules/resolve-from
+                  - require-uncached@1.0.3 node_modules/require-uncached
+                  - rimraf@2.6.1 node_modules/rimraf
+                  - del@2.2.2 node_modules/del
+                  - run-async@2.3.0 node_modules/run-async
+                  - rx-lite@4.0.8 node_modules/rx-lite
+                  - rx-lite-aggregates@4.0.8 node_modules/rx-lite-aggregates
+                  - signal-exit@3.0.2 node_modules/signal-exit
+                  - restore-cursor@2.0.0 node_modules/restore-cursor
+                  - cli-cursor@2.1.0 node_modules/cli-cursor
+                  - slice-ansi@0.0.4 node_modules/slice-ansi
+                  - sprintf-js@1.0.3 node_modules/sprintf-js
+                  - argparse@1.0.9 node_modules/argparse
+                  - js-yaml@3.8.4 node_modules/js-yaml
+                  - is-fullwidth-code-point@2.0.0 node_modules/table/node_modules/is-fullwidth-code-point
+                  - string-width@2.0.0 node_modules/table/node_modules/string-width
+                  - table@4.0.1 node_modules/table
+                  - text-table@0.2.0 node_modules/text-table
+                  - through@2.3.8 node_modules/through
+                  - tmp@0.0.31 node_modules/tmp
+                  - external-editor@2.0.4 node_modules/external-editor
+                  - inquirer@3.1.1 node_modules/inquirer
+                  - tryit@1.0.3 node_modules/tryit
+                  - is-resolvable@1.0.0 node_modules/is-resolvable
+                  - type-check@0.3.2 node_modules/type-check
+                  - levn@0.3.0 node_modules/levn
+                  - typedarray@0.0.6 node_modules/typedarray
+                  - concat-stream@1.6.0 node_modules/concat-stream
+                  - wordwrap@1.0.0 node_modules/wordwrap
+                  - optionator@0.8.2 node_modules/optionator
+                  - minimist@0.0.8 node_modules/write/node_modules/minimist
+                  - mkdirp@0.5.1 node_modules/write/node_modules/mkdirp
+                  - write@0.2.1 node_modules/write
+                  - flat-cache@1.2.2 node_modules/flat-cache
+                  - file-entry-cache@2.0.0 node_modules/file-entry-cache
+                  - eslint@4.1.0 node_modules/eslint
+                  npm WARN eslint-plugin-import@2.6.0 requires a peer of eslint@2.x - 4.x but none was installed.
+                  npm WARN eslint-plugin-node@5.0.0 requires a peer of eslint@>=3.1.0 but none was installed.
+                  npm WARN eslint-plugin-react@7.1.0 requires a peer of eslint@^3.0.0 || ^4.0.0 but none was installed.
+                  npm WARN eslint-plugin-standard@3.0.1 requires a peer of eslint@>=3.19.0 but none was installed.
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm install eslint
+                  grokkit@1.0.0 /Users/lynnedaniels/Documents/code/grokkit
+                  └─┬ eslint@4.1.0
+                    ├─┬ babel-code-frame@6.22.0
+                    │ └── js-tokens@3.0.1
+                    ├─┬ concat-stream@1.6.0
+                    │ └── typedarray@0.0.6
+                    ├─┬ debug@2.6.8
+                    │ └── ms@2.0.0
+                    ├─┬ eslint-scope@3.7.1
+                    │ └── esrecurse@4.2.0
+                    ├─┬ espree@3.4.3
+                    │ ├── acorn@5.0.3
+                    │ └─┬ acorn-jsx@3.0.1
+                    │   └── acorn@3.3.0
+                    ├── esquery@1.0.0
+                    ├── estraverse@4.2.0
+                    ├─┬ file-entry-cache@2.0.0
+                    │ └─┬ flat-cache@1.2.2
+                    │   ├── circular-json@0.3.1
+                    │   ├─┬ del@2.2.2
+                    │   │ ├─┬ globby@5.0.0
+                    │   │ │ └─┬ array-union@1.0.2
+                    │   │ │   └── array-uniq@1.0.3
+                    │   │ ├── is-path-cwd@1.0.0
+                    │   │ ├─┬ is-path-in-cwd@1.0.0
+                    │   │ │ └── is-path-inside@1.0.0
+                    │   │ └── rimraf@2.6.1
+                    │   └─┬ write@0.2.1
+                    │     └─┬ mkdirp@0.5.1
+                    │       └── minimist@0.0.8
+                    ├── globals@9.18.0
+                    ├── imurmurhash@0.1.4
+                    ├─┬ inquirer@3.1.1
+                    │ ├── ansi-escapes@2.0.0
+                    │ ├─┬ cli-cursor@2.1.0
+                    │ │ └─┬ restore-cursor@2.0.0
+                    │ │   ├─┬ onetime@2.0.1
+                    │ │   │ └── mimic-fn@1.1.0
+                    │ │   └── signal-exit@3.0.2
+                    │ ├── cli-width@2.1.0
+                    │ ├─┬ external-editor@2.0.4
+                    │ │ ├── iconv-lite@0.4.18
+                    │ │ ├── jschardet@1.4.2
+                    │ │ └─┬ tmp@0.0.31
+                    │ │   └── os-tmpdir@1.0.2
+                    │ ├── figures@2.0.0
+                    │ ├── mute-stream@0.0.7
+                    │ ├─┬ run-async@2.3.0
+                    │ │ └── is-promise@2.1.0
+                    │ ├── rx-lite@4.0.8
+                    │ ├── rx-lite-aggregates@4.0.8
+                    │ ├─┬ string-width@2.0.0
+                    │ │ └── is-fullwidth-code-point@2.0.0
+                    │ └── through@2.3.8
+                    ├─┬ is-resolvable@1.0.0
+                    │ └── tryit@1.0.3
+                    ├─┬ js-yaml@3.8.4
+                    │ ├─┬ argparse@1.0.9
+                    │ │ └── sprintf-js@1.0.3
+                    │ └── esprima@3.1.3
+                    ├─┬ json-stable-stringify@1.0.1
+                    │ └── jsonify@0.0.0
+                    ├─┬ levn@0.3.0
+                    │ ├── prelude-ls@1.1.2
+                    │ └── type-check@0.3.2
+                    ├─┬ mkdirp@0.5.1
+                    │ └── minimist@0.0.8
+                    ├── natural-compare@1.4.0
+                    ├─┬ optionator@0.8.2
+                    │ ├── deep-is@0.1.3
+                    │ ├── fast-levenshtein@2.0.6
+                    │ └── wordwrap@1.0.0
+                    ├── path-is-inside@1.0.2
+                    ├── pluralize@4.0.0
+                    ├── progress@2.0.0
+                    ├─┬ require-uncached@1.0.3
+                    │ ├─┬ caller-path@0.1.0
+                    │ │ └── callsites@0.2.0
+                    │ └── resolve-from@1.0.1
+                    ├─┬ table@4.0.1
+                    │ ├─┬ ajv@4.11.8
+                    │ │ └── co@4.6.0
+                    │ ├── ajv-keywords@1.5.1
+                    │ ├── slice-ansi@0.0.4
+                    │ └─┬ string-width@2.0.0
+                    │   └── is-fullwidth-code-point@2.0.0
+                    └── text-table@0.2.0
+
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ ./node_modules/.bin/eslint --init
+                  ? How would you like to configure ESLint? Inspect your JavaScript file(s)
+                  ? Which file(s), path(s), or glob(s) should be examined? node_modules/.eslintrc.
+                  js
+                  ? What format do you want your config file to be in? JavaScript
+                  ? Are you using ECMAScript 6 features? Yes
+                  ? Are you using ES6 modules? Yes
+                  ? Where will your code run? Browser, Node
+                  ? Do you use CommonJS? No
+                  ? Do you use JSX? Yes
+                  ? Do you use React? Yes
+                  Installing eslint-plugin-react@latest, eslint@latest
+                  grokkit@1.0.0 /Users/lynnedaniels/Documents/code/grokkit
+                  ├── eslint@4.1.0
+                  └── eslint-plugin-react@7.1.0
+
+
+
+                  Automatic Configuration failed.  No files were able to be parsed.
+                  Error: Automatic Configuration failed.  No files were able to be parsed.
+                      at configureRules (/Users/lynnedaniels/Documents/code/grokkit/node_modules/eslint/lib/config/config-initializer.js:149:15)
+                      at processAnswers (/Users/lynnedaniels/Documents/code/grokkit/node_modules/eslint/lib/config/config-initializer.js:257:18)
+                      at inquirer.prompt.then.secondAnswers (/Users/lynnedaniels/Documents/code/grokkit/node_modules/eslint/lib/config/config-initializer.js:422:26)
+                  Determining Config: 0% [------------------------------] 0.0s elapsed, eta 0.0s Lynnes-MacBook-Pro:grokkit lynnedaniels$ uninstall eslint
+                  -bash: uninstall: command not found
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm uninstall eslint
+                  - acorn@5.0.3 node_modules/acorn
+                  - acorn@3.3.0 node_modules/acorn-jsx/node_modules/acorn
+                  - acorn-jsx@3.0.1 node_modules/acorn-jsx
+                  - ajv-keywords@1.5.1 node_modules/ajv-keywords
+                  - ansi-escapes@2.0.0 node_modules/ansi-escapes
+                  - array-uniq@1.0.3 node_modules/array-uniq
+                  - array-union@1.0.2 node_modules/array-union
+                  - callsites@0.2.0 node_modules/callsites
+                  - caller-path@0.1.0 node_modules/caller-path
+                  - circular-json@0.3.1 node_modules/circular-json
+                  - cli-width@2.1.0 node_modules/cli-width
+                  - co@4.6.0 node_modules/co
+                  - deep-is@0.1.3 node_modules/deep-is
+                  - minimist@0.0.8 node_modules/eslint/node_modules/minimist
+                  - mkdirp@0.5.1 node_modules/eslint/node_modules/mkdirp
+                  - ms@2.0.0 node_modules/eslint/node_modules/ms
+                  - debug@2.6.8 node_modules/eslint/node_modules/debug
+                  - espree@3.4.3 node_modules/espree
+                  - esprima@3.1.3 node_modules/esprima
+                  - estraverse@4.2.0 node_modules/estraverse
+                  - esquery@1.0.0 node_modules/esquery
+                  - esrecurse@4.2.0 node_modules/esrecurse
+                  - eslint-scope@3.7.1 node_modules/eslint-scope
+                  - fast-levenshtein@2.0.6 node_modules/fast-levenshtein
+                  - figures@2.0.0 node_modules/figures
+                  - globals@9.18.0 node_modules/globals
+                  - globby@5.0.0 node_modules/globby
+                  - iconv-lite@0.4.18 node_modules/iconv-lite
+                  - imurmurhash@0.1.4 node_modules/imurmurhash
+                  - is-fullwidth-code-point@2.0.0 node_modules/inquirer/node_modules/is-fullwidth-code-point
+                  - string-width@2.0.0 node_modules/inquirer/node_modules/string-width
+                  - is-path-cwd@1.0.0 node_modules/is-path-cwd
+                  - is-promise@2.1.0 node_modules/is-promise
+                  - js-tokens@3.0.1 node_modules/js-tokens
+                  - babel-code-frame@6.22.0 node_modules/babel-code-frame
+                  - jschardet@1.4.2 node_modules/jschardet
+                  - jsonify@0.0.0 node_modules/jsonify
+                  - json-stable-stringify@1.0.1 node_modules/json-stable-stringify
+                  - ajv@4.11.8 node_modules/ajv
+                  - mimic-fn@1.1.0 node_modules/mimic-fn
+                  - mute-stream@0.0.7 node_modules/mute-stream
+                  - natural-compare@1.4.0 node_modules/natural-compare
+                  - onetime@2.0.1 node_modules/onetime
+                  - os-tmpdir@1.0.2 node_modules/os-tmpdir
+                  - path-is-inside@1.0.2 node_modules/path-is-inside
+                  - is-path-inside@1.0.0 node_modules/is-path-inside
+                  - is-path-in-cwd@1.0.0 node_modules/is-path-in-cwd
+                  - pluralize@4.0.0 node_modules/pluralize
+                  - prelude-ls@1.1.2 node_modules/prelude-ls
+                  - progress@2.0.0 node_modules/progress
+                  - resolve-from@1.0.1 node_modules/resolve-from
+                  - require-uncached@1.0.3 node_modules/require-uncached
+                  - rimraf@2.6.1 node_modules/rimraf
+                  - del@2.2.2 node_modules/del
+                  - run-async@2.3.0 node_modules/run-async
+                  - rx-lite@4.0.8 node_modules/rx-lite
+                  - rx-lite-aggregates@4.0.8 node_modules/rx-lite-aggregates
+                  - signal-exit@3.0.2 node_modules/signal-exit
+                  - restore-cursor@2.0.0 node_modules/restore-cursor
+                  - cli-cursor@2.1.0 node_modules/cli-cursor
+                  - slice-ansi@0.0.4 node_modules/slice-ansi
+                  - sprintf-js@1.0.3 node_modules/sprintf-js
+                  - argparse@1.0.9 node_modules/argparse
+                  - js-yaml@3.8.4 node_modules/js-yaml
+                  - is-fullwidth-code-point@2.0.0 node_modules/table/node_modules/is-fullwidth-code-point
+                  - string-width@2.0.0 node_modules/table/node_modules/string-width
+                  - table@4.0.1 node_modules/table
+                  - text-table@0.2.0 node_modules/text-table
+                  - through@2.3.8 node_modules/through
+                  - tmp@0.0.31 node_modules/tmp
+                  - external-editor@2.0.4 node_modules/external-editor
+                  - inquirer@3.1.1 node_modules/inquirer
+                  - tryit@1.0.3 node_modules/tryit
+                  - is-resolvable@1.0.0 node_modules/is-resolvable
+                  - type-check@0.3.2 node_modules/type-check
+                  - levn@0.3.0 node_modules/levn
+                  - typedarray@0.0.6 node_modules/typedarray
+                  - concat-stream@1.6.0 node_modules/concat-stream
+                  - wordwrap@1.0.0 node_modules/wordwrap
+                  - optionator@0.8.2 node_modules/optionator
+                  - minimist@0.0.8 node_modules/write/node_modules/minimist
+                  - mkdirp@0.5.1 node_modules/write/node_modules/mkdirp
+                  - write@0.2.1 node_modules/write
+                  - flat-cache@1.2.2 node_modules/flat-cache
+                  - file-entry-cache@2.0.0 node_modules/file-entry-cache
+                  - eslint@4.1.0 node_modules/eslint
+                  npm WARN eslint-plugin-import@2.6.0 requires a peer of eslint@2.x - 4.x but none was installed.
+                  npm WARN eslint-plugin-node@5.0.0 requires a peer of eslint@>=3.1.0 but none was installed.
+                  npm WARN eslint-plugin-react@7.1.0 requires a peer of eslint@^3.0.0 || ^4.0.0 but none was installed.
+                  npm WARN eslint-plugin-standard@3.0.1 requires a peer of eslint@>=3.19.0 but none was installed.
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm install eslint
+                  grokkit@1.0.0 /Users/lynnedaniels/Documents/code/grokkit
+                  └─┬ eslint@4.1.0
+                    ├─┬ babel-code-frame@6.22.0
+                    │ └── js-tokens@3.0.1
+                    ├─┬ concat-stream@1.6.0
+                    │ └── typedarray@0.0.6
+                    ├─┬ debug@2.6.8
+                    │ └── ms@2.0.0
+                    ├─┬ eslint-scope@3.7.1
+                    │ └── esrecurse@4.2.0
+                    ├─┬ espree@3.4.3
+                    │ ├── acorn@5.0.3
+                    │ └─┬ acorn-jsx@3.0.1
+                    │   └── acorn@3.3.0
+                    ├── esquery@1.0.0
+                    ├── estraverse@4.2.0
+                    ├─┬ file-entry-cache@2.0.0
+                    │ └─┬ flat-cache@1.2.2
+                    │   ├── circular-json@0.3.1
+                    │   ├─┬ del@2.2.2
+                    │   │ ├─┬ globby@5.0.0
+                    │   │ │ └─┬ array-union@1.0.2
+                    │   │ │   └── array-uniq@1.0.3
+                    │   │ ├── is-path-cwd@1.0.0
+                    │   │ ├─┬ is-path-in-cwd@1.0.0
+                    │   │ │ └── is-path-inside@1.0.0
+                    │   │ └── rimraf@2.6.1
+                    │   └─┬ write@0.2.1
+                    │     └─┬ mkdirp@0.5.1
+                    │       └── minimist@0.0.8
+                    ├── globals@9.18.0
+                    ├── imurmurhash@0.1.4
+                    ├─┬ inquirer@3.1.1
+                    │ ├── ansi-escapes@2.0.0
+                    │ ├─┬ cli-cursor@2.1.0
+                    │ │ └─┬ restore-cursor@2.0.0
+                    │ │   ├─┬ onetime@2.0.1
+                    │ │   │ └── mimic-fn@1.1.0
+                    │ │   └── signal-exit@3.0.2
+                    │ ├── cli-width@2.1.0
+                    │ ├─┬ external-editor@2.0.4
+                    │ │ ├── iconv-lite@0.4.18
+                    │ │ ├── jschardet@1.4.2
+                    │ │ └─┬ tmp@0.0.31
+                    │ │   └── os-tmpdir@1.0.2
+                    │ ├── figures@2.0.0
+                    │ ├── mute-stream@0.0.7
+                    │ ├─┬ run-async@2.3.0
+                    │ │ └── is-promise@2.1.0
+                    │ ├── rx-lite@4.0.8
+                    │ ├── rx-lite-aggregates@4.0.8
+                    │ ├─┬ string-width@2.0.0
+                    │ │ └── is-fullwidth-code-point@2.0.0
+                    │ └── through@2.3.8
+                    ├─┬ is-resolvable@1.0.0
+                    │ └── tryit@1.0.3
+                    ├─┬ js-yaml@3.8.4
+                    │ ├─┬ argparse@1.0.9
+                    │ │ └── sprintf-js@1.0.3
+                    │ └── esprima@3.1.3
+                    ├─┬ json-stable-stringify@1.0.1
+                    │ └── jsonify@0.0.0
+                    ├─┬ levn@0.3.0
+                    │ ├── prelude-ls@1.1.2
+                    │ └── type-check@0.3.2
+                    ├─┬ mkdirp@0.5.1
+                    │ └── minimist@0.0.8
+                    ├── natural-compare@1.4.0
+                    ├─┬ optionator@0.8.2
+                    │ ├── deep-is@0.1.3
+                    │ ├── fast-levenshtein@2.0.6
+                    │ └── wordwrap@1.0.0
+                    ├── path-is-inside@1.0.2
+                    ├── pluralize@4.0.0
+                    ├── progress@2.0.0
+                    ├─┬ require-uncached@1.0.3
+                    │ ├─┬ caller-path@0.1.0
+                    │ │ └── callsites@0.2.0
+                    │ └── resolve-from@1.0.1
+                    ├─┬ table@4.0.1
+                    │ ├─┬ ajv@4.11.8
+                    │ │ └── co@4.6.0
+                    │ ├── ajv-keywords@1.5.1
+                    │ ├── slice-ansi@0.0.4
+                    │ └─┬ string-width@2.0.0
+                    │   └── is-fullwidth-code-point@2.0.0
+                    └── text-table@0.2.0
+
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ ./node_modules/.bin/eslint --init
+                  ? How would you like to configure ESLint? Answer questions about your style
+                  ? Are you using ECMAScript 6 features? Yes
+                  ? Are you using ES6 modules? Yes
+                  ? Where will your code run? Browser, Node
+                  ? Do you use CommonJS? No
+                  ? Do you use JSX? Yes
+                  ? Do you use React? Yes
+                  ? What style of indentation do you use? Tabs
+                  ? What quotes do you use for strings? Single
+                  ? What line endings do you use? Unix
+                  ? Do you require semicolons? Yes
+                  ? What format do you want your config file to be in? JavaScript
+                  Installing eslint-plugin-react@latest, eslint@latest
+                  grokkit@1.0.0 /Users/lynnedaniels/Documents/code/grokkit
+                  ├── eslint@4.1.0
+                  └── eslint-plugin-react@7.1.0
+
+                  Installing eslint-plugin-react@latest, eslint@latest
+                  grokkit@1.0.0 /Users/lynnedaniels/Documents/code/grokkit
+                  ├── eslint@4.1.0
+                  └── eslint-plugin-react@7.1.0
+
+                  Successfully created .eslintrc.js file in /Users/lynnedaniels/Documents/code/grokkit
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm init -f npm install htmlhint@latest
+                  npm WARN using --force I sure hope you know what you are doing.
+                  Wrote to /Users/lynnedaniels/Documents/code/grokkit/package.json:
+
+                  {
+                    "name": "grokkit",
+                    "version": "1.0.0",
+                    "description": "Web Development Notes and Examples",
+                    "main": "whatdoesthisdo.js",
+                    "scripts": {
+                      "test": "echo \"Error: no test specified\" && exit 1",
+                      "dev": "lite-server"
+                    },
+                    "author": "",
+                    "license": "ISC",
+                    "devDependencies": {
+                      "eslint": "^4.1.0",
+                      "eslint-config-standard": "^10.2.1",
+                      "eslint-plugin-import": "^2.6.0",
+                      "eslint-plugin-node": "^5.0.0",
+                      "eslint-plugin-promise": "^3.5.0",
+                      "eslint-plugin-react": "^7.1.0",
+                      "eslint-plugin-standard": "^3.0.1",
+                      "lite-server": "^2.2.0"
+                    },
+                    "dependencies": {
+                      "light-server": "^2.0.2"
+                    },
+                    "repository": {
+                      "type": "git",
+                      "url": "git+https://github.com/Lynne-Daniels/grokkit.git"
+                    },
+                    "keywords": [],
+                    "bugs": {
+                      "url": "https://github.com/Lynne-Daniels/grokkit/issues"
+                    },
+                    "homepage": "https://github.com/Lynne-Daniels/grokkit#readme"
+                  }
+
+
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ which linter
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ hash -r
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ which linter
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ just random stuff
+                  -bash: just: command not found
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ htmlhint -v
+                  -bash: htmlhint: command not found
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ .node_modules/.bin/htmlhint -v
+                  -bash: .node_modules/.bin/htmlhint: No such file or directory
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm install htmlhint
+                  npm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+                  npm WARN deprecated minimatch@0.3.0: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+                  npm WARN prefer global jshint@2.8.0 should be installed with -g
+                  grokkit@1.0.0 /Users/lynnedaniels/Documents/code/grokkit
+                  └─┬ htmlhint@0.9.13
+                    ├── async@1.4.2
+                    ├── colors@1.0.3
+                    ├── commander@2.6.0
+                    ├─┬ csslint@0.10.0
+                    │ └── parserlib@0.2.5
+                    ├── glob@5.0.15
+                    ├─┬ jshint@2.8.0
+                    │ ├─┬ cli@0.6.6
+                    │ │ └─┬ glob@3.2.11
+                    │ │   └─┬ minimatch@0.3.0
+                    │ │     ├── lru-cache@2.7.3
+                    │ │     └── sigmund@1.0.1
+                    │ ├─┬ console-browserify@1.1.0
+                    │ │ └── date-now@0.1.4
+                    │ ├── exit@0.1.2
+                    │ ├─┬ htmlparser2@3.8.3
+                    │ │ ├── domelementtype@1.3.0
+                    │ │ ├── domhandler@2.3.0
+                    │ │ ├─┬ domutils@1.5.1
+                    │ │ │ └─┬ dom-serializer@0.1.0
+                    │ │ │   ├── domelementtype@1.1.3
+                    │ │ │   └── entities@1.1.1
+                    │ │ ├── entities@1.0.0
+                    │ │ └─┬ readable-stream@1.1.14
+                    │ │   ├── isarray@0.0.1
+                    │ │   └── string_decoder@0.10.31
+                    │ ├── lodash@3.7.0
+                    │ ├── minimatch@2.0.10
+                    │ ├── shelljs@0.3.0
+                    │ └── strip-json-comments@1.0.4
+                    ├── strip-json-comments@1.0.4
+                    └── xml@1.0.0
+
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ htmlhint -v
+                  -bash: htmlhint: command not found
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm htmlhint -v
+                  3.10.10
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm init node_modules/.bin/htmlhint
+                  This utility will walk you through creating a package.json file.
+                  It only covers the most common items, and tries to guess sensible defaults.
+
+                  See `npm help json` for definitive documentation on these fields
+                  and exactly what they do.
+
+                  Use `npm install <pkg> --save` afterwards to install a package and
+                  save it as a dependency in the package.json file.
+
+                  Press ^C at any time to quit.
+                  name: (grokkit)
+                  version: (1.0.0)
+                  author: Lynne Daniels
+                  license: (ISC)
+                  About to write to /Users/lynnedaniels/Documents/code/grokkit/package.json:
+
+                  {
+                    "name": "grokkit",
+                    "version": "1.0.0",
+                    "description": "Web Development Notes and Examples",
+                    "main": "whatdoesthisdo.js",
+                    "scripts": {
+                      "test": "echo \"Error: no test specified\" && exit 1",
+                      "dev": "lite-server"
+                    },
+                    "author": "Lynne Daniels",
+                    "license": "ISC",
+                    "devDependencies": {
+                      "eslint": "^4.1.0",
+                      "eslint-config-standard": "^10.2.1",
+                      "eslint-plugin-import": "^2.6.0",
+                      "eslint-plugin-node": "^5.0.0",
+                      "eslint-plugin-promise": "^3.5.0",
+                      "eslint-plugin-react": "^7.1.0",
+                      "eslint-plugin-standard": "^3.0.1",
+                      "lite-server": "^2.2.0"
+                    },
+                    "dependencies": {
+                      "light-server": "^2.0.2"
+                    },
+                    "repository": {
+                      "type": "git",
+                      "url": "git+https://github.com/Lynne-Daniels/grokkit.git"
+                    },
+                    "keywords": [],
+                    "bugs": {
+                      "url": "https://github.com/Lynne-Daniels/grokkit/issues"
+                    },
+                    "homepage": "https://github.com/Lynne-Daniels/grokkit#readme"
+                  }
+
+
+                  Is this ok? (yes) yes
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm install csslint
+                  grokkit@1.0.0 /Users/lynnedaniels/Documents/code/grokkit
+                  └─┬ csslint@1.0.5
+                    ├── clone@2.1.1
+                    └── parserlib@1.1.1
+
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm init node_modules/.bin/csslint
+                  This utility will walk you through creating a package.json file.
+                  It only covers the most common items, and tries to guess sensible defaults.
+
+                  See `npm help json` for definitive documentation on these fields
+                  and exactly what they do.
+
+                  Use `npm install <pkg> --save` afterwards to install a package and
+                  save it as a dependency in the package.json file.
+
+                  Press ^C at any time to quit.
+                  name: (grokkit)
+                  version: (1.0.0)
+                  license: (ISC)
+                  About to write to /Users/lynnedaniels/Documents/code/grokkit/package.json:
+
+                  {
+                    "name": "grokkit",
+                    "version": "1.0.0",
+                    "description": "Web Development Notes and Examples",
+                    "main": "whatdoesthisdo.js",
+                    "scripts": {
+                      "test": "echo \"Error: no test specified\" && exit 1",
+                      "dev": "lite-server"
+                    },
+                    "author": "Lynne Daniels",
+                    "license": "ISC",
+                    "devDependencies": {
+                      "eslint": "^4.1.0",
+                      "eslint-config-standard": "^10.2.1",
+                      "eslint-plugin-import": "^2.6.0",
+                      "eslint-plugin-node": "^5.0.0",
+                      "eslint-plugin-promise": "^3.5.0",
+                      "eslint-plugin-react": "^7.1.0",
+                      "eslint-plugin-standard": "^3.0.1",
+                      "lite-server": "^2.2.0"
+                    },
+                    "dependencies": {
+                      "light-server": "^2.0.2"
+                    },
+                    "repository": {
+                      "type": "git",
+                      "url": "git+https://github.com/Lynne-Daniels/grokkit.git"
+                    },
+                    "keywords": [],
+                    "bugs": {
+                      "url": "https://github.com/Lynne-Daniels/grokkit/issues"
+                    },
+                    "homepage": "https://github.com/Lynne-Daniels/grokkit#readme"
+                  }
+
+
+                  Is this ok? (yes)
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ node_modules/.bin/csslint -v
+                  csslint: Could not read file data in /Users/lynnedaniels/Documents/code/grokkit/-v. Is the file empty?
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm node_modules/.bin/csslint -v
+                  3.10.10
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ npm -v
+                  3.10.10
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ csslint
+                  -bash: csslint: command not found
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ node_modules/.bin/csslint css/main.css
+
+
+                  csslint: There are 5 problems in /Users/lynnedaniels/Documents/code/grokkit/css/main.css.
+
+                  main.css
+                  1: warning at line 2, col 1
+                  Rule doesn't have all its properties in alphabetical order.
+                  body{
+
+                  main.css
+                  2: error at line 6, col 1
+                  Expected RBRACE at line 6, col 1.
+                  .linky{
+
+                  main.css
+                  3: warning at line 21, col 1
+                  Rule doesn't have all its properties in alphabetical order.
+                  .side div{
+
+                  main.css
+                  4: warning at line 25, col 1
+                  Rule doesn't have all its properties in alphabetical order.
+                  h3{
+
+                  main.css
+                  5: warning at line 31, col 1
+                  Rule doesn't have all its properties in alphabetical order.
+                  article{
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ node_modules/.bin/csslint css/main.css
+
+
+                  csslint: There are 4 problems in /Users/lynnedaniels/Documents/code/grokkit/css/main.css.
+
+                  main.css
+                  1: warning at line 18, col 1
+                  Rule doesn't have all its properties in alphabetical order.
+                  .navbar-nav{
+
+                  main.css
+                  2: error at line 21, col 1
+                  Expected RBRACE at line 21, col 1.
+                  .side div{
+
+                  main.css
+                  3: warning at line 25, col 1
+                  Rule doesn't have all its properties in alphabetical order.
+                  h3{
+
+                  main.css
+                  4: warning at line 31, col 1
+                  Rule doesn't have all its properties in alphabetical order.
+                  article{
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ csslint
+                  -bash: csslint: command not found
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ node_modules/.bin/csslint
+
+                  Usage: csslint-rhino.js [options]* [file|dir]*
+
+                  Global Options
+                    --help                                   Displays this information.
+                    --format=<format>                        Indicate which format to use for output.
+                    --list-rules                             Outputs all of the rules available.
+                    --quiet                                  Only output when errors are present.
+                    --errors=<rule[,rule]+>                  Indicate which rules to include as errors.
+                    --warnings=<rule[,rule]+>                Indicate which rules to include as warnings.
+                    --ignore=<rule[,rule]+>                  Indicate which rules to ignore completely.
+                    --exclude-list=<file|dir[,file|dir]+>    Indicate which files/directories to exclude from being linted.
+                    --config=<file>                          Reads csslint options from specified file.
+                    --version                                Outputs the current version number.
+
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ which csslint
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$ which node_modules/.bin/csslint
+                  node_modules/.bin/csslint
+                  Lynnes-MacBook-Pro:grokkit lynnedaniels$
+                  </pre>
+                        </div>
+                        <li>Can FTP from Mac's Finder, same as Window's Explorer.</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </article>
             </div>
-        <article>
-          <h3>Setting Up the New Macbook Pro</h3>
-          node installed at /usr/local/bin/nodenpm was installed at /usr/local/bin/npm message says make sure that /usr/local/bin is in your $PATH
-          install Sublime Test
-          https://packagecontrol.io/installation 
-          tried to run git in the terminal, dialog pop up wants to install it and maybe other developer stuff.  ok -- took 5 min. Did not install xCode, another choice in the dialog box.
-        </article>
+            <div class="well well-lg">
+                <a name="command-line" class="make-new-project"></a>
+                <article>
+                    <h3>Command Line</h3>
+                    <ul>
+                        <li><code>./</code> is same directory, <code>../</code> is the parent</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </article>
+            </div>
+            </div>
 
-          </div>
-      </div>
-
+        </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="../js/app.js"></script>
-  
-  </body>
+</body>
+
 </html>
